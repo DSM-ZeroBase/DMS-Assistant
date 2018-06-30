@@ -1,4 +1,4 @@
-from flask import Flask, Response
+from flask import Flask, Response, request
 import requests
 import datetime
 
@@ -20,10 +20,20 @@ def hello():
 
 @app.route('/meal')
 def rawMeal():
-    meal = getData('http://dsm2015.cafe24.com/meal/'+datetime.date.isoformat(datetime.date.today()))
+    meal = getData('http://dsm2015.cafe24.com/meal/' + datetime.date.isoformat(datetime.date.today()))
     response = Response(meal)
     response.headers["Content-Type"] = 'application/json; charset=utf8'
     return response
+
+
+@app.route('/google', methods=['POST', 'GET'])
+def google():
+    lastReq = ''
+    if request.method == 'POST':
+        lastReq = request.form
+        return
+    else:
+        return lastReq
 
 
 if __name__ == '__main__':
