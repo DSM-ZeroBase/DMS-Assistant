@@ -14,6 +14,36 @@ def getData(url):
         return 'error'
 
 
+def meal(param):
+    rawMeal = ''
+    jsonMeal = ''
+    meal = ''
+
+    if (param["day"] == "오늘"):
+        rawMeal = json.loads(
+            getData('http://dsm2015.cafe24.com/meal/' + datetime.date.isoformat(datetime.date.today())))
+    elif (param["day"] == "내일"):
+        rawMeal = json.loads(getData('http://dsm2015.cafe24.com/meal/' + datetime.date.isoformat(
+            datetime.date.today() + datetime.timedelta(days=1))))
+
+    if (param["meal"] == "아침 급식"):
+        jsonMeal = rawMeal["breakfast"]
+    elif (param["meal"] == "점심 급식"):
+        jsonMeal = rawMeal["lunch"]
+    elif (param["meal"] == "저녁 급식"):
+        jsonMeal = rawMeal["dinner"]
+
+    for i in jsonMeal:
+        meal += i + ', '
+    meal = meal[0:-2]  # 여기까지 급식 받아오기
+
+    mealTxt = param["day"] + "의 " + param["meal"] + "은 " + meal + "입니다."
+    req = {"fulfillmentText": mealTxt, "payload": {"google": {"expectUserResponse": True, "richResponse": {
+        "items": [{"simpleResponse": {"textToSpeech": mealTxt}}]}}}}
+
+    return req
+
+
 @app.route('/')
 def hello():
     return 'I am DMS Assistant!'
@@ -27,14 +57,19 @@ def rawMeal():
     return response
 
 
-@app.route('/google', methods=['POST', 'GET'])
+@app.route('/google', methods=['POST'])
 def google():
-    if request.method == 'POST':
-        rawReq = request.form
-        req = json.load(rawReq)
-        return json.dump(req)
-    else:
-        return ''
+    req = request.json
+    intent = req["queryResult"]["intent"]["displayName"]
+    queryText = req["queryResult"]["queryText"]
+    param = req["queryResult"]["parameters"]
+
+    if (intent == "askMeal"):
+        rawResponse = json.dumps(meal(param), ensure_ascii=False)
+
+    response = Response(rawResponse)
+    response.headers["Content-Type"] = 'application/json; charset=utf8'
+    return response
 
 
 if __name__ == '__main__':
