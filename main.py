@@ -32,9 +32,9 @@ def google():
     if request.method == 'POST':
         rawReq = request.form
         req = json.load(rawReq)
-        return req
+        return json.dump(req)
     else:
-        return
+        return ''
 
 
 if __name__ == '__main__':
