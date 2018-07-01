@@ -1,6 +1,7 @@
 from flask import Flask, Response, request
 import requests
 import datetime
+import json
 
 app = Flask(__name__)
 
@@ -26,16 +27,14 @@ def rawMeal():
     return response
 
 
-lastReq = ''
-
-
 @app.route('/google', methods=['POST', 'GET'])
 def google():
     if request.method == 'POST':
-        lastReq = request.form
-        return
+        rawReq = request.form
+        req = json.load(rawReq)
+        return req
     else:
-        return lastReq
+        return
 
 
 if __name__ == '__main__':
