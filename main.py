@@ -26,9 +26,11 @@ def rawMeal():
     return response
 
 
+lastReq = ''
+
+
 @app.route('/google', methods=['POST', 'GET'])
 def google():
-    lastReq = ''
     if request.method == 'POST':
         lastReq = request.form
         return
