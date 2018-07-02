@@ -18,7 +18,7 @@ def meal(param):
     rawMeal = ''
     jsonMeal = ''
     meal = ''
-    listMeal = ''
+    listMeal=''
 
     if (param["day"] == "오늘"):
         rawMeal = json.loads(
@@ -42,45 +42,8 @@ def meal(param):
     meal = meal[0:-2]  # 여기까지 급식 받아오기
 
     mealTxt = param["day"] + "의 " + param["meal"] + "은 " + meal + "입니다."
-
-    """{"simpleResponse": {"textToSpeech": mealTxt}}"""
-    
     req = {"fulfillmentText": mealTxt, "payload": {"google": {"expectUserResponse": False, "richResponse": {
-        "items": [{
-            "description": "Item One Description",
-            "image": {
-                "url": "http://imageOneUrl.com",
-                "accessibilityText": "Image description for screen readers"
-            },
-            "optionInfo": {
-                "key": "itemOne",
-                "synonyms": [
-                    "thing one",
-                    "object one"
-                ]
-            },
-            "title": "Item One"
-        },
-            {
-                "description": "Item Two Description",
-                "image": {
-                    "url": "http://imageTwoUrl.com",
-                    "accessibilityText": "Image description for screen readers"
-                },
-                "optionInfo": {
-                    "key": "itemTwo",
-                    "synonyms": [
-                        "thing two",
-                        "object two"
-                    ]
-                },
-                "title": "Item Two"
-            }
-        ],
-        "platform": "google",
-        "title": "Title",
-        "type": "list_card"
-    }}}}
+        "items": [{"simpleResponse": {"textToSpeech": mealTxt}}]}}}}
 
     return req
 
