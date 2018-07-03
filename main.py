@@ -39,7 +39,7 @@ def meal(param):
     for i in jsonMeal:
         listMeal.append({
             "optionInfo": {
-                "key": "meal",
+                "key": i,
                 "synonyms": []
             },
             "title": i
