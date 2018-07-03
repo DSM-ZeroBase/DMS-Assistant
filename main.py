@@ -35,6 +35,8 @@ def meal(param):
         jsonMeal = rawMeal["dinner"]
 
     for i in jsonMeal:
+        if (meal == "혼합"):
+            continue
         meal += i + ', '
     for i in jsonMeal:
         listMeal.append({

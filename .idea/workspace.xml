@@ -20,8 +20,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="62" column="62" lean-forward="true" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+            <state relative-caret-position="182">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
               <folding>
                 <element signature="e#134#239#0" />
                 <element signature="e#366#492#0" />
@@ -30,9 +30,6 @@
                 <element signature="e#1009#1143#0" />
                 <element signature="e#1037#1109#0" />
                 <element signature="e#1369#1436#0" />
-                <element signature="e#1344#1372#0" />
-                <element signature="e#1414#1634#0" />
-                <element signature="e#1695#2090#0" />
               </folding>
             </state>
           </provider>
@@ -82,7 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,6 +90,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,9 +160,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +179,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="62" lean-forward="true" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+          <folding>
+            <element signature="e#134#239#0" />
+            <element signature="e#366#492#0" />
+            <element signature="e#534#689#0" />
+            <element signature="e#993#1144#0" />
+            <element signature="e#1009#1143#0" />
+            <element signature="e#1037#1109#0" />
+            <element signature="e#1369#1436#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
@@ -192,9 +212,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -218,9 +235,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -244,9 +258,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -270,15 +281,13 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/flask/app.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="152">
@@ -289,7 +298,6 @@
           </second_editor>
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -298,20 +306,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/낙서장.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/낙서.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/낙서장.txt" />
+    <entry file="file://$PROJECT_DIR$/낙서.txt" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -324,9 +320,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -343,9 +336,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -369,9 +359,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -395,9 +382,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
@@ -421,15 +405,13 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/flask/app.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="152">
@@ -440,7 +422,6 @@
           </second_editor>
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -450,17 +431,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/낙서장.txt" />
-    <entry file="file://$PROJECT_DIR$/낙서.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/낙서.txt" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="62" column="62" lean-forward="true" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+        <state relative-caret-position="182">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
             <element signature="e#134#239#0" />
             <element signature="e#366#492#0" />
@@ -469,9 +444,6 @@
             <element signature="e#1009#1143#0" />
             <element signature="e#1037#1109#0" />
             <element signature="e#1369#1436#0" />
-            <element signature="e#1344#1372#0" />
-            <element signature="e#1414#1634#0" />
-            <element signature="e#1695#2090#0" />
           </folding>
         </state>
       </provider>
