@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1858eff-72f3-499a-bb1a-2ca78284a91a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DMS-Assistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DMS-Assistant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,22 +19,20 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state relative-caret-position="547">
+              <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <element signature="e#1009#1239#0" />
-                <element signature="e#1043#1137#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="낙서장.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/낙서장.txt">
+      <file leaf-file-name="낙서.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/낙서.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="893">
+              <caret line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -64,6 +57,7 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/낙서장.txt" />
+        <option value="$PROJECT_DIR$/낙서.txt" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -155,7 +149,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32842106" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32842106" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11770833" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -191,8 +185,6 @@
           <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#1009#1239#0" />
-            <element signature="e#1043#1137#0" />
           </folding>
         </state>
       </provider>
@@ -210,8 +202,6 @@
           <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#1009#1239#0" />
-            <element signature="e#1043#1137#0" />
           </folding>
         </state>
       </provider>
@@ -229,8 +219,6 @@
           <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#1009#1239#0" />
-            <element signature="e#1043#1137#0" />
           </folding>
         </state>
       </provider>
@@ -248,8 +236,6 @@
           <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#1009#1239#0" />
-            <element signature="e#1043#1137#0" />
           </folding>
         </state>
       </provider>
@@ -282,14 +268,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/낙서.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        <state relative-caret-position="547">
+          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#1009#1239#0" />
-            <element signature="e#1043#1137#0" />
           </folding>
         </state>
       </provider>
