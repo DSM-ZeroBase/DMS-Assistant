@@ -51,31 +51,33 @@ def meal(param):
     textreq = {"fulfillmentText": mealTxt, "payload": {"google": {"expectUserResponse": False, "richResponse": {
         "items": [{"simpleResponse": {"textToSpeech": mealTxt}}]}}}}
 
-    listreq = {"fulfillmentText": param["day"] + "의 " + param["meal"] + "은 다음과 같습니다.", "payload": {
-        "google": {
-            "expectUserResponse": False,
-            "richResponse": {
-                "items": [
-                    {
-                        "simpleResponse": {
-                            "textToSpeech": mealTxt
-                        }
-                    }
-                ]
-            },
-            "systemIntent": {
-                "intent": "actions.intent.OPTION",
-                "data": {
-                    "@type": "type.googleapis.com/google.actions.v2.OptionValueSpec",
-                    "listSelect": {
-                        "title": param["day"] + "의 " + param["meal"],
-                        "items":
-                            listMeal
-                    }
-                }
-            }
-        }
-    }
+    listreq = {"fulfillmentText": param["day"] + "의 " + param["meal"] + "은 다음과 같습니다.",
+               "payload": {
+                   "google": {
+                       "expectUserResponse": False,
+                       "richResponse": {
+                           "items": [
+                               {
+                                   "simpleResponse": {
+                                       "displayText": param["day"] + "의 " + param["meal"] + "은 다음과 같습니다.",
+                                       "textToSpeech": mealTxt
+                                   }
+                               }
+                           ]
+                       },
+                       "systemIntent": {
+                           "intent": "actions.intent.OPTION",
+                           "data": {
+                               "@type": "type.googleapis.com/google.actions.v2.OptionValueSpec",
+                               "listSelect": {
+                                   "title": param["day"] + "의 " + param["meal"],
+                                   "items":
+                                       listMeal
+                               }
+                           }
+                       }
+                   }
+               }
                }
 
     return listreq
