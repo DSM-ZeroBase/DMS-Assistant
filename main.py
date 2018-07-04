@@ -41,8 +41,21 @@ def meal(param):
     meal = meal[0:-2]  # 여기까지 급식 받아오기
 
     mealTxt = param["day"] + "의 " + param["meal"] + "은 " + meal + "입니다."
-    textreq = {"fulfillmentText": mealTxt, "payload": {"google": {"expectUserResponse": False, "richResponse": {
-        "items": [{"simpleResponse": {"textToSpeech": mealTxt}}]}}}}
+    textreq = {
+        "fulfillmentText": mealTxt,
+        "payload":
+            {"google":
+                 {"expectUserResponse": False, "richResponse":
+                     {"items":
+                         [
+                             {"simpleResponse":
+                                  {"textToSpeech": mealTxt}
+                              }
+                         ]
+                     }
+                  }
+             }
+    }
 
     return textreq
 
@@ -66,6 +79,7 @@ def google():
     intent = req["queryResult"]["intent"]["displayName"]
     queryText = req["queryResult"]["queryText"]
     param = req["queryResult"]["parameters"]
+    rawResponse = ''
 
     if (intent == "askMeal"):
         rawResponse = json.dumps(meal(param), ensure_ascii=False)
