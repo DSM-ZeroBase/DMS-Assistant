@@ -18,7 +18,7 @@ def meal(param):
     rawMeal = ''
     jsonMeal = ''
     meal = ''
-    listMeal = []
+    TTSmeal = ''
 
     if (param["day"] == "오늘"):
         rawMeal = json.loads(
@@ -37,52 +37,17 @@ def meal(param):
     for i in jsonMeal:
         if (meal == "혼합"):
             continue
-        meal += i + ', '
-    for i in jsonMeal:
-        listMeal.append({
-            "optionInfo": {
-                "key": i,
-                "synonyms": []
-            },
-            "title": i
-        })
+        TTSmeal += i + ', '
+        meal += "\n" + i
 
     meal = meal[0:-2]  # 여기까지 급식 받아오기
 
+    TTSmealTxt = param["day"] + "의 " + param["meal"] + "은 " + TTSmeal + "입니다."
     mealTxt = param["day"] + "의 " + param["meal"] + "은 " + meal + "입니다."
     textreq = {"fulfillmentText": mealTxt, "payload": {"google": {"expectUserResponse": False, "richResponse": {
-        "items": [{"simpleResponse": {"textToSpeech": mealTxt}}]}}}}
+        "items": [{"simpleResponse": {"textToSpeech": TTSmealTxt}}]}}}}
 
-    listreq = {"fulfillmentText": param["day"] + "의 " + param["meal"] + "은 다음과 같습니다.",
-               "payload": {
-                   "google": {
-                       "expectUserResponse": False,
-                       "richResponse": {
-                           "items": [
-                               {
-                                   "simpleResponse": {
-                                       "displayText": param["day"] + "의 " + param["meal"] + "은 다음과 같습니다.",
-                                       "textToSpeech": mealTxt
-                                   }
-                               }
-                           ]
-                       },
-                       "systemIntent": {
-                           "intent": "actions.intent.OPTION",
-                           "data": {
-                               "@type": "type.googleapis.com/google.actions.v2.OptionValueSpec",
-                               "listSelect": {
-                                   "title": param["day"] + "의 " + param["meal"],
-                                   "items":
-                                       listMeal
-                               }
-                           }
-                       }
-                   }
-               }
-               }
-
-    return listreq
+    return textreq
 
 
 @app.route('/')
