@@ -18,7 +18,6 @@ def meal(param):
     rawMeal = ''
     jsonMeal = ''
     meal = ''
-    TTSmeal = ''
 
     if (param["day"] == "오늘"):
         rawMeal = json.loads(
@@ -37,15 +36,13 @@ def meal(param):
     for i in jsonMeal:
         if (meal == "혼합"):
             continue
-        TTSmeal += i + ', '
-        meal += "\n" + i
+        meal += i + ', '
 
     meal = meal[0:-2]  # 여기까지 급식 받아오기
 
-    TTSmealTxt = param["day"] + "의 " + param["meal"] + "은 " + TTSmeal + "입니다."
     mealTxt = param["day"] + "의 " + param["meal"] + "은 " + meal + "입니다."
     textreq = {"fulfillmentText": mealTxt, "payload": {"google": {"expectUserResponse": False, "richResponse": {
-        "items": [{"simpleResponse": {"textToSpeech": TTSmealTxt}}]}}}}
+        "items": [{"simpleResponse": {"textToSpeech": mealTxt}}]}}}}
 
     return textreq
 
